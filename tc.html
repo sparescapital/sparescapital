@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Spares Capital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="terms-page">
+    <nav>
+        <img src="images/SCLogo.png" alt="Spares Capital Logo" class="logo" loading="lazy">
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="https://wa.me/27835190624">Contact</a>
+            <a href="about.html">About</a>
+            <a href="tc.html">T&Cs</a>
+        </div>
+    </nav>
+
+    <main class="terms-container">
+        <h1>Terms & Conditions</h1>
+        <div class="terms-content">
+            <section class="terms-section">
+                <h2 class="terms-title">1. Introduction</h2>
+                <p>Welcome to Spares Capital. These terms and conditions outline the rules and regulations for the use of our website and services...</p>
+            </section>
+
+            <section class="terms-section">
+                <h2 class="terms-title">2. Intellectual Property</h2>
+                <p>Unless otherwise stated, Spares Capital and/or its licensors own the intellectual property rights for all material on this website...</p>
+            </section>
+
+            <section class="terms-section">
+                <h2 class="terms-title">3. User Responsibilities</h2>
+                <p>By using our services, you agree not to:
+                    <ul>
+                        <li>Misuse any vehicle part information</li>
+                        <li>Resell parts without authorization</li>
+                        <li>Provide false vehicle details</li>
+                    </ul>
+                </p>
+            </section>
+
+            <!-- Add this to your tc.html within the <main class="terms-container"> -->
+<section class="terms-section">
+    <h2 class="terms-title">Payment Terms & Financial Protections</h2>
+    <p><strong>4.1 Upfront Payments:</strong> Client agrees to pay a non-refundable deposit of <mark>50%</mark> of the total order value before commencement of any work. Remaining balance must be settled prior to shipment.</p>
+    
+    <p><strong>4.2 Payment Default:</strong> Failure to complete payment within 7 days of invoice may result in:
+        <ul>
+            <li>Order cancellation</li>
+            <li>Forfeiture of deposit</li>
+            <li>Storage fees (2% per day of order value)</li>
+        </ul>
+    </p>
+</section>
+
+<section class="terms-section">
+    <h2 class="terms-title">Delivery & Risk Management</h2>
+    <p><strong>5.1 Shipping Terms:</strong>
+        <ul>
+            <li>All delivery timelines are estimates only</li>
+            <li>Risk transfers to client upon dispatch</li>
+            <li>Customs/duties responsibility lies with client</li>
+        </ul>
+    </p>
+    
+    <p><strong>5.2 Force Majeure:</strong> Not liable for delays caused by:
+        <ul>
+            <li>Supplier failures</li>
+            <li>Customs hold-ups</li>
+            <li>Acts of nature</li>
+        </ul>
+    </p>
+</section>
+
+<section class="terms-section">
+    <h2 class="terms-title">Data Protection & Privacy</h2>
+    <p><strong>6.1 Information Handling:</strong>
+        <ul>
+            <li>Client data used solely for order fulfillment</li>
+            <li>Encrypted payment processing</li>
+            <li>Right to verify client identity</li>
+        </ul>
+    </p>
+    
+    <p><strong>6.2 Record Keeping:</strong> Transaction records retained for:
+        <ul>
+            <li>7 years (tax compliance)</li>
+            <li>Warranty periods</li>
+            <li>Dispute resolution</li>
+        </ul>
+    </p>
+</section>
+
+<section class="terms-section">
+    <h2 class="terms-title">Third-Party Partnerships</h2>
+    <p><strong>7.1 Supplier Relationships:</strong>
+        <ul>
+            <li>We act as intermediary between client and suppliers</li>
+            <li>No liability for supplier errors/misrepresentations</li>
+            <li>Client must verify part compatibility</li>
+        </ul>
+    </p>
+    
+    <p><strong>7.2 Quality Assurance:</strong>
+        <ul>
+            <li>Parts guaranteed as described by suppliers</li>
+            <li>Returns subject to supplier policies</li>
+            <li>No warranty for improper installation</li>
+        </ul>
+    </p>
+</section>
+
+<section class="terms-section">
+    <h2 class="terms-title">Dispute Resolution</h2>
+    <p><strong>8.1 Binding Arbitration:</strong> All claims must be:
+        <ul>
+            <li>Filed within 30 days of delivery</li>
+            <li>Resolved through SAICA-approved mediation</li>
+            <li>Subject to Gauteng Province jurisdiction</li>
+        </ul>
+    </p>
+</section>
+
+            <!-- Add more sections as needed -->
+
+            <section class="terms-section">
+                <h2 class="terms-title">8. Governing Law</h2>
+                <p>These terms shall be governed by and construed in accordance with the laws of South Africa...</p>
+            </section>
+        </div>
+    </main>
+
+    <footer id="dtr-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Spares Capital. All rights reserved.</p>
+            <ul class="dtr-social-list">
+                <li><a href="tc.html">Terms & Conditions</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="mailto:support@sparescapital.com">Contact Support</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamic copyright year
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Hamburger menu functionality
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Spares Capital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="about-page">
+    <nav>
+        <img src="images/SCLogo.png" alt="Spares Capital Logo" class="logo" loading="lazy">
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="https://wa.me/27835190624">Contact</a>
+            <a href="about.html">About</a>
+            <a href="tc.html">T&Cs</a>
+        </div>
+    </nav>
+
+    <main class="about-container">
+        <h1>About Spares Capital</h1>
+        
+        <section class="about-section">
+            <h2 class="about-title">Our Story</h2>
+            <div class="about-content">
+                <p>Founded in 2023, Spares Capital began as a small family-owned business with a passion for automotive excellence. What started as a local parts supplier has grown into a trusted national resource for quality vehicle components.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">Satisfied Customers</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-truck"></i>
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Delivery Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2 class="about-title">Our Mission</h2>
+            <div class="mission-content">
+                <p>We're committed to providing:</p>
+                <ul class="mission-list">
+                    <li><i class="fas fa-check-circle"></i> Genuine quality parts</li>
+                    <li><i class="fas fa-check-circle"></i> Competitive pricing</li>
+                    <li><i class="fas fa-check-circle"></i> Reliable delivery</li>
+                    <li><i class="fas fa-check-circle"></i> Expert support</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2 class="about-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/team1.jpg" alt="CEO" loading="lazy">
+                    <h3>John Doe</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/team2.jpg" alt="Operations Manager" loading="lazy">
+                    <h3>Jane Smith</h3>
+                    <p>Operations Manager</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/team3.jpg" alt="Technical Specialist" loading="lazy">
+                    <h3>Mike Johnson</h3>
+                    <p>Technical Specialist</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="dtr-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Spares Capital. All rights reserved.</p>
+            <ul class="dtr-social-list">
+                <li><a href="tc.html">Terms & Conditions</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="mailto:support@sparescapital.com">Contact Support</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamic copyright year
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Hamburger menu functionality
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
