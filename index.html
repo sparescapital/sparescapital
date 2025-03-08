@@ -20,8 +20,8 @@
     <nav>
         <img src="images/SCLogo.png" alt="CAR Parts Logo" class="logo" loading="lazy">
         <div class="hamburger">
-        <i class="fas fa-bars"></i> <!-- Font Awesome icon -->
-    </div>
+            <i class="fas fa-bars"></i> <!-- Font Awesome icon -->
+        </div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="https://wa.me/27835190624">Contact Us</a>
@@ -34,7 +34,6 @@
     <a href="https://wa.me/27672716896" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-
     <section class="hero">
         <img src="images/HeroSection.jpg" alt="Hero Image" class="hero-image" loading="eager" decoding="async">
         <div class="hero-content">
@@ -291,39 +290,41 @@
     </script>
 
 <script>
-    // Hamburger menu functionality
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
+       // Hamburger menu functionality
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
 
-    hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-        hamburger.classList.toggle("active");
-    });
+            // Toggle menu on hamburger click
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                hamburger.classList.toggle("active");
+            });
 
-    // Close menu when clicking outside
-    document.addEventListener("click", (e) => {
-        if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-            navLinks.classList.remove("active");
-            hamburger.classList.remove("active");
-        }
-    });
+            // Close menu when clicking outside
+            document.addEventListener("click", (e) => {
+                if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove("active");
+                    hamburger.classList.remove("active");
+                }
+            });
 
-    // Close menu when clicking a link (using event delegation for better performance)
-    navLinks.addEventListener("click", (e) => {
-        if (e.target.tagName === "A") {
-            navLinks.classList.remove("active");
-            hamburger.classList.remove("active");
-        }
-    });
+            // Close menu when clicking a link
+            navLinks.addEventListener("click", (e) => {
+                if (e.target.tagName === "A") {
+                    navLinks.classList.remove("active");
+                    hamburger.classList.remove("active");
+                }
+            });
+        });
 
-    // Original scripts remain unchanged
-    window.addEventListener("load", () => {
-        document.querySelector(".loading-overlay").style.opacity = "0";
-        setTimeout(() => {
-            document.querySelector(".loading-overlay").style.display = "none";
-        }, 300);
-    });
+        // Loading overlay functionality
+        window.addEventListener("load", () => {
+            document.querySelector(".loading-overlay").style.opacity = "0";
+            setTimeout(() => {
+                document.querySelector(".loading-overlay").style.display = "none";
+            }, 300);
+        });
 
     document.getElementById("year").textContent = new Date().getFullYear();
 
