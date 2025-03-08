@@ -308,12 +308,12 @@
         }
     });
 
-    // Close menu when clicking a link
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", () => {
+    // Close menu when clicking a link (using event delegation for better performance)
+    navLinks.addEventListener("click", (e) => {
+        if (e.target.tagName === "A") {
             navLinks.classList.remove("active");
             hamburger.classList.remove("active");
-        });
+        }
     });
 
     // Original scripts remain unchanged
@@ -331,6 +331,5 @@
         // ... existing form submission code ...
     });
 </script>
-
 </body>
 </html>
