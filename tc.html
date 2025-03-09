@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="terms-page">
+    <!-- Navigation Bar -->
     <nav>
         <img src="images/SCLogo.png" alt="Spares Capital Logo" class="logo" loading="lazy">
         <div class="hamburger">
@@ -25,23 +27,88 @@
         </div>
     </nav>
 
+    <!-- Main Content -->
     <main class="terms-container">
         <h1>Terms & Conditions</h1>
         <div class="terms-content">
+            <!-- Introduction Section -->
             <section class="terms-section">
                 <h2 class="terms-title">1. Introduction</h2>
-                <p>Welcome to Spares Capital. These terms and conditions outline the rules and regulations for the use of our website and services...</p>
+                <p>Welcome to Spares Capital. These terms and conditions outline the rules and regulations for the use of our website and services. By accessing this website, you agree to comply with these terms. If you disagree with any part of these terms, please do not use our website.</p>
             </section>
 
+            <!-- Intellectual Property Section -->
             <section class="terms-section">
                 <h2 class="terms-title">2. Intellectual Property</h2>
-                <p>Unless otherwise stated, Spares Capital and/or its licensors own the intellectual property rights for all material on this website...</p>
+                <p>Unless otherwise stated, Spares Capital and/or its licensors own the intellectual property rights for all material on this website. All intellectual property rights are reserved. You may access this material for personal use, subject to the restrictions set in these terms and conditions.</p>
             </section>
 
-            <!-- Add more sections as needed -->
+            <!-- User Responsibilities Section -->
+            <section class="terms-section">
+                <h2 class="terms-title">3. User Responsibilities</h2>
+                <p>By using our services, you agree not to:</p>
+                <ul>
+                    <li>Misuse any vehicle part information provided on this website.</li>
+                    <li>Resell parts without prior authorization from Spares Capital.</li>
+                    <li>Provide false or misleading vehicle details when placing an order.</li>
+                </ul>
+            </section>
+
+            <!-- Payment Terms Section -->
+            <section class="terms-section">
+                <h2 class="terms-title">4. Payment Terms</h2>
+                <p><strong>4.1 Upfront Payments:</strong> Clients are required to pay a non-refundable deposit of <mark>50%</mark> of the total order value before work commences. The remaining balance must be settled prior to shipment.</p>
+                <p><strong>4.2 Payment Default:</strong> Failure to complete payment within 7 days of invoice issuance may result in:</p>
+                <ul>
+                    <li>Order cancellation.</li>
+                    <li>Forfeiture of the deposit.</li>
+                    <li>Storage fees of 2% per day of the order value.</li>
+                </ul>
+            </section>
+
+            <!-- Delivery & Risk Management Section -->
+            <section class="terms-section">
+                <h2 class="terms-title">5. Delivery & Risk Management</h2>
+                <p><strong>5.1 Shipping Terms:</strong></p>
+                <ul>
+                    <li>All delivery timelines are estimates only.</li>
+                    <li>Risk transfers to the client upon dispatch of goods.</li>
+                    <li>Customs and duties are the responsibility of the client.</li>
+                </ul>
+                <p><strong>5.2 Force Majeure:</strong> Spares Capital is not liable for delays caused by:</p>
+                <ul>
+                    <li>Supplier failures.</li>
+                    <li>Customs hold-ups.</li>
+                    <li>Acts of nature or other unforeseen events.</li>
+                </ul>
+            </section>
+
+            <!-- Data Protection Section -->
+            <section class="terms-section">
+                <h2 class="terms-title">6. Data Protection</h2>
+                <p><strong>6.1 Information Handling:</strong></p>
+                <ul>
+                    <li>Client data is used solely for order fulfillment.</li>
+                    <li>All payment processing is encrypted for security.</li>
+                    <li>Spares Capital reserves the right to verify client identity.</li>
+                </ul>
+                <p><strong>6.2 Record Keeping:</strong> Transaction records are retained for:</p>
+                <ul>
+                    <li>7 years for tax compliance purposes.</li>
+                    <li>Warranty periods.</li>
+                    <li>Dispute resolution.</li>
+                </ul>
+            </section>
+
+            <!-- Governing Law Section -->
+            <section class="terms-section">
+                <h2 class="terms-title">7. Governing Law</h2>
+                <p>These terms and conditions are governed by and construed in accordance with the laws of South Africa. Any disputes relating to these terms will be subject to the exclusive jurisdiction of the courts of South Africa.</p>
+            </section>
         </div>
     </main>
 
+    <!-- Footer -->
     <footer id="dtr-footer">
         <div class="container">
             <p>&copy; <span id="year"></span> Spares Capital. All rights reserved.</p>
@@ -53,6 +120,7 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script>
         // Dynamic copyright year
         document.getElementById("year").textContent = new Date().getFullYear();
