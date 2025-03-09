@@ -391,6 +391,35 @@ nav {
     color: white;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .grey-container {
+        grid-template-columns: 1fr; /* Switch to single column */
+        padding: 40px 20px; /* Reduce padding for smaller screens */
+        min-height: auto; /* Remove fixed height */
+        gap: 20px; /* Reduce gap between items */
+    }
+
+    .content-left {
+        text-align: center; /* Center-align text */
+    }
+
+    .content-left h2 {
+        font-size: clamp(2rem, 5vw, 2.5rem); /* Adjust font size for mobile */
+        margin-bottom: 20px; /* Reduce margin */
+    }
+
+    .content-image {
+        max-width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+        justify-self: center; /* Center the image */
+    }
+
+    .learn-more-btn {
+        padding: 12px 30px; /* Adjust button size */
+        font-size: 1rem; /* Reduce font size */
+    }
+}
 /* Contact Form Styling */
 #contact {
     padding: var(--space-xl) 5%;
