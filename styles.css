@@ -56,6 +56,18 @@
     100% { transform: rotate(360deg); }
 }
 
+/* General Fix for All Pages */
+main {
+    padding-top: 100px; /* Add padding to avoid overlap with the fixed nav bar */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    main {
+        padding-top: 80px; /* Adjust padding for smaller screens */
+    }
+}
+
 /* Navigation */
 nav {
     position: fixed;
