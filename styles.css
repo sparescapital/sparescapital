@@ -520,7 +520,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-decoration: none;
@@ -528,9 +528,14 @@ nav {
     z-index: 1000;
 }
 
-.whatsapp-float:hover {
-    background: #1ebe57;
-    transform: scale(1.1);
+@media (max-width: 480px) {
+    .whatsapp-float {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        bottom: 15px;
+        right: 15px;
+    }
 }
 
 .terms-checkbox {
@@ -597,10 +602,11 @@ nav {
     .hamburger {
         display: block;
         position: fixed;
-        right: 25px;
-        top: 30px;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
     }
-    
+
     .nav-links {
         position: fixed;
         top: 0;
@@ -609,11 +615,11 @@ nav {
         width: 70%;
         background: rgba(0, 0, 0, 0.95);
         flex-direction: column;
-        padding: 100px 30px;
+        padding: 100px 20px;
         transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1000;
     }
-    
+
     .nav-links.active {
         right: 0;
     }
@@ -621,6 +627,11 @@ nav {
     .nav-links a {
         padding: 1.2rem 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        height: 70px;
     }
 }
 
