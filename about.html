@@ -1,127 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Spares Capital</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Us | Spares Capital - Precision Automotive</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WMKKS9PTVF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@100;400;600;700&family=Orbitron:wght@700&display=swap"
+        rel="stylesheet">
 
-  gtag('config', 'G-WMKKS9PTVF');
-</script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
 <body class="about-page">
     <nav>
-        <img src="images/SCLogo.png" alt="Spares Capital Logo" class="logo" loading="lazy">
+        <img src="images/SCLogo.png" alt="Spares Capital" class="logo">
         <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+            <i class="fas fa-bars"></i>
         </div>
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="https://wa.me/27835190624">Contact</a>
-            <a href="about.html">About</a>
-            <a href="tc.html">T&Cs</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="tc.html">Policies</a>
+            <a href="https://wa.me/27835190624" class="nav-cta">Contact Experts</a>
         </div>
     </nav>
 
     <main class="about-container">
-        <h1></h1>
-        
-      <section class="about-section">
-            <h1>About Spares Capital</h1>
-            <h2 class="about-title">Our Story</h2>
-            <div class="about-content">
-                <p>Founded in 2023, Spares Capital began as a small family-owned business with a passion for automotive excellence. What started as a local parts supplier has grown into a trusted national resource for quality vehicle components.</p>
-                
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-users"></i>
-                        <span class="stat-number">5000+</span>
-                        <span class="stat-label">Satisfied Customers</span>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-truck"></i>
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Delivery Support</span>
-                    </div>
+        <section class="section-header" data-reveal>
+            <h1 class="section-title">THE LEGACY OF <span>PERFORMANCE</span></h1>
+            <p class="section-subtitle">Since 2023, Spares Capital has been the cornerstone of high-performance
+                automotive parts sourcing in South Africa.</p>
+        </section>
+
+        <section class="about-content" data-reveal>
+            <div class="service-card" style="text-align: left; margin-bottom: 50px;">
+                <h2 style="font-family: 'Orbitron'; font-size: 1.8rem; margin-bottom: 20px;">OUR JOURNEY</h2>
+                <p>Founded with a passion for mechanical excellence, Spares Capital started as a specialized consultancy
+                    for precision engine parts. Today, we stand as a premier national resource, bridging the gap between
+                    world-class manufacturers and the South African automotive industry.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt" style="font-size: 2rem; color: var(--accent-red);"></i>
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years of Expertise</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users" style="font-size: 2rem; color: var(--accent-red);"></i>
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Clients Served</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-bolt" style="font-size: 2rem; color: var(--accent-red);"></i>
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Technical Support</span>
                 </div>
             </div>
         </section>
 
-        <section class="about-section">
-            <h2 class="about-title">Our Mission</h2>
-            <div class="mission-content">
-                <p>We're committed to providing:</p>
-                <ul class="mission-list">
-                    <li><i class="fas fa-check-circle"></i> Genuine quality parts</li>
-                    <li><i class="fas fa-check-circle"></i> Competitive pricing</li>
-                    <li><i class="fas fa-check-circle"></i> Reliable delivery</li>
-                    <li><i class="fas fa-check-circle"></i> Expert support</li>
-                </ul>
+        <section class="about-section" data-reveal>
+            <h2 class="section-title" style="text-align: center; font-size: 2rem;">OUR CORE MISSION</h2>
+            <div class="service-grid" style="margin-top: 40px;">
+                <div class="service-card">
+                    <i class="fas fa-check-double service-icon"></i>
+                    <h3>Absolute Quality</h3>
+                    <p>We source only original manufacturer (OEM) or certified high-performance alternatives.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-handshake service-icon"></i>
+                    <h3>Integrity First</h3>
+                    <p>Transparent pricing and honest technical assessments for every client.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-truck-fast service-icon"></i>
+                    <h3>Express Logistics</h3>
+                    <p>Same-day dispatch for critical components within the Gauteng region.</p>
+                </div>
             </div>
         </section>
 
-        <section class="about-section">
-            <h2 class="about-title">Our Team</h2>
+        <section class="about-section" style="margin-top: 100px;">
+            <h2 class="section-title" style="text-align: center; font-size: 2rem;">EXECUTIVE LEADERSHIP</h2>
             <div class="team-grid">
-                <div class="team-card">
-                    <img src="images/team1.jpg" alt="CEO" loading="lazy">
-                    <h3>Nyasha Matundu</h3>
-                    <p>Founder & CEO</p>
+                <div class="team-card" data-reveal>
+                    <div
+                        style="height: 300px; background: #222; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-user-tie" style="font-size: 5rem; color: #444;"></i>
+                    </div>
+                    <div class="team-info">
+                        <h3>Nyasha Matundu</h3>
+                        <p style="color: var(--accent-red); font-weight: 600;">Founder & CEO</p>
+                    </div>
                 </div>
-                <div class="team-card">
-                    <img src="images/team2.jpg" alt="Operations Manager" loading="lazy">
-                    <h3>Ian</h3>
-                    <p>Operations Manager</p>
+                <div class="team-card" data-reveal>
+                    <div
+                        style="height: 300px; background: #222; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-user-gear" style="font-size: 5rem; color: #444;"></i>
+                    </div>
+                    <div class="team-info">
+                        <h3>Ian</h3>
+                        <p style="color: var(--accent-red); font-weight: 600;">Operations Director</p>
+                    </div>
                 </div>
-                <div class="team-card">
-                    <img src="images/team3.jpg" alt="Technical Specialist" loading="lazy">
-                    <h3>Owen Chikura</h3>
-                    <p>Technical Specialist</p>
+                <div class="team-card" data-reveal>
+                    <div
+                        style="height: 300px; background: #222; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-user-shield" style="font-size: 5rem; color: #444;"></i>
+                    </div>
+                    <div class="team-info">
+                        <h3>Owen Chikura</h3>
+                        <p style="color: var(--accent-red); font-weight: 600;">Technical Specialist</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    
-    <footer id="dtr-footer">
+    <footer>
         <div class="container">
             <p>&copy; <span id="year"></span> Spares Capital. All rights reserved.</p>
-            <ul class="dtr-social-list">
-                <li><a href="https://www.facebook.com/people/Spares-Capital/61573079162739" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-                <li><a href="https://www.twitter.com/SparesCapita" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="https://www.instagram.com/SparesCapital" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-            </ul>
-            <p>Contact us: <a href="mailto:support@sparescapital.com">support@sparescapital.com</a> | +276 7271 6896</p>
+            <div class="footer-socials">
+                <a href="https://facebook.com/SparesCapital" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/sparescapital" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/SparesCapital" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p style="font-size: 0.8rem; opacity: 0.5;">support@sparescapital.com | +27 83 519 0624</p>
         </div>
     </footer>
 
     <script>
-        // Dynamic copyright year
-        document.getElementById("year").textContent = new Date().getFullYear();
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
 
-        // Hamburger menu functionality
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-links");
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                hamburger.querySelector("i").classList.toggle("fa-bars");
+                hamburger.querySelector("i").classList.toggle("fa-times");
+            });
 
-        hamburger.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-            hamburger.classList.toggle("active");
+            const revealElements = document.querySelectorAll("[data-reveal]");
+            const revealOnScroll = () => {
+                revealElements.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight * 0.85) {
+                        el.classList.add("revealed");
+                    }
+                });
+            };
+            window.addEventListener("scroll", revealOnScroll);
+            revealOnScroll();
+
+            document.getElementById("year").textContent = new Date().getFullYear();
         });
     </script>
 </body>
+
 </html>
