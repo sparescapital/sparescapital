@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <title>Spares Capital | Premium Automotive Parts South Africa</title>
-    <meta name="description" content="Discover premium genuine car, truck & machinery parts. South Africa's leading supplier with same-day delivery in Tshwane. Expertise you can trust.">
-    <meta name="keywords" content="car parts, auto parts, luxury car spares, genuine automotive parts, South Africa spares">
-    
+
+    <title>Spares Capital | Premium Automotive Parts</title>
+    <meta name="description" content="Premium genuine car, truck & machinery parts. South Africa's trusted supplier.">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WMKKS9PTVF"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-WMKKS9PTVF');
-</script>
 
 <body>
     <div class="loading-overlay">
@@ -43,7 +36,7 @@
             <a href="index.html" class="active">Home</a>
             <a href="about.html">About Us</a>
             <a href="tc.html">Policies</a>
-            <a href="https://wa.me/27835190624" class="nav-cta">Contact Experts</a>
+            <a href="https://wa.me/27835190624" class="nav-cta">Inquiry</a>
         </div>
     </nav>
 
@@ -54,90 +47,143 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-image-container">
-            <img src="images/HeroSection.jpg" alt="Automotive Performance" class="hero-image">
-            <div class="hero-overlay"></div>
+        <div class="hero-visual">
+            <video autoplay muted loop playsinline poster="images/HeroSection.jpg">
+                <source src="https://cdn.pixabay.com/video/2021/08/21/85848-590059379_large.mp4" type="video/mp4">
+            </video>
         </div>
-        <div class="hero-content">
-            <h1 class="hero-text">ENGINEERED FOR<br><span>PERFORMANCE</span></h1>
-            <p class="section-subtitle" style="color: #fff; margin-bottom: 30px; opacity: 0.8;">Genuine spares for cars, trucks, and heavy machinery.</p>
-            <a href="#contact" class="button order-button">Order Now</a>
+        <div class="hero-overlay"></div>
+        <div class="tech-line h tech-line-1"></div>
+        <div class="tech-line h tech-line-2"></div>
+        <div class="hero-content" data-reveal>
+            <h1 class="hero-text">Spares Sourced.<br><span>Delivered to You.</span></h1>
+            <p class="section-subtitle">Premium genuine parts for cars, trucks, and heavy machinery. Direct to your
+                door, anywhere in SA.</p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="#contact" class="button order-button">Request Quote</a>
+                <a href="https://wa.me/27835190624" class="button"
+                    style="border: 1px solid var(--glass-border); color: var(--text-main);">WhatsApp Support</a>
+            </div>
         </div>
     </section>
 
     <!-- Category Grid -->
     <section class="grid-container" data-reveal>
         <div class="grid-item" onclick="scrollToContact()">
-            <img src="images/EnginePartsTile.jpg" alt="Engine Systems">
-            <div class="grid-overlay">Engine Systems</div>
+            <div class="grid-image-wrap">
+                <img src="images/EnginePartsTile.jpg" alt="Engine Systems" loading="lazy">
+            </div>
+            <div class="grid-content">
+                <h3>Engine Systems</h3>
+                <span>View Options <i class="fas fa-arrow-right"></i></span>
+            </div>
         </div>
         <div class="grid-item" onclick="scrollToContact()">
-            <img src="images/SuspensionPartsTile.jpg" alt="Suspension">
-            <div class="grid-overlay">Suspension & Handling</div>
+            <div class="grid-image-wrap">
+                <img src="images/SuspensionPartsTile.jpg" alt="Suspension" loading="lazy">
+            </div>
+            <div class="grid-content">
+                <h3>Suspension</h3>
+                <span>View Options <i class="fas fa-arrow-right"></i></span>
+            </div>
         </div>
         <div class="grid-item" onclick="scrollToContact()">
-            <img src="images/TransmissionPartsTile.jpg" alt="Transmission">
-            <div class="grid-overlay">Drivetrain Solutions</div>
+            <div class="grid-image-wrap">
+                <img src="images/TransmissionPartsTile.jpg" alt="Transmission" loading="lazy">
+            </div>
+            <div class="grid-content">
+                <h3>Transmission</h3>
+                <span>View Options <i class="fas fa-arrow-right"></i></span>
+            </div>
         </div>
         <div class="grid-item" onclick="scrollToContact()">
-            <img src="images/SensorPartsTiles.jpg" alt="Diagnostics">
-            <div class="grid-overlay">Advanced Electronics</div>
+            <div class="grid-image-wrap">
+                <img src="images/SensorPartsTiles.jpg" alt="Sensors" loading="lazy">
+            </div>
+            <div class="grid-content">
+                <h3>Sensors & Electronics</h3>
+                <span>View Options <i class="fas fa-arrow-right"></i></span>
+            </div>
         </div>
         <div class="grid-item" onclick="scrollToContact()">
-            <img src="images/InjectorsPartsTile.jpg" alt="Fuel Systems">
-            <div class="grid-overlay">Precision Fuel Systems</div>
+            <div class="grid-image-wrap">
+                <img src="images/InjectorsPartsTile.jpg" alt="Injectors" loading="lazy">
+            </div>
+            <div class="grid-content">
+                <h3>Injectors</h3>
+                <span>View Options <i class="fas fa-arrow-right"></i></span>
+            </div>
         </div>
         <div class="grid-item" onclick="scrollToContact()">
-            <img src="images/BodyKitsPartsTile.jpg" alt="Aesthetics">
-            <div class="grid-overlay">Performance Body Kits</div>
+            <div class="grid-image-wrap">
+                <img src="images/BodyKitsPartsTile.jpg" alt="Body Kits" loading="lazy">
+            </div>
+            <div class="grid-content">
+                <h3>Body Kits</h3>
+                <span>View Options <i class="fas fa-arrow-right"></i></span>
+            </div>
         </div>
     </section>
 
     <!-- Services -->
     <section class="services-section">
         <div class="section-header" data-reveal>
-            <h2 class="section-title">Premium Support</h2>
-            <p class="section-subtitle">At Spares Capital, we deliver an elite automotive experience. Expert consultation, guaranteed quality, and expedited logistics define our commitment to your vehicle.</p>
+            <h2 class="section-title" style="font-size: 2rem;">Why Spares Capital?</h2>
+            <p class="section-subtitle">We combine automotive expertise with reliable logistics to keep you moving.</p>
         </div>
 
         <div class="service-grid" data-reveal>
             <div class="service-card">
-                <i class="service-icon fas fa-shuttle-van"></i>
-                <h3>On-Demand Delivery</h3>
-                <p>Global logistics supplying premium parts directly to your doorstep or automotive workshop.</p>
+                <i class="service-icon fas fa-truck"></i>
+                <h3>Reliable Delivery</h3>
+                <p>Tracked shipping to your workshop or doorstep nationwide.</p>
             </div>
             <div class="service-card">
-                <i class="service-icon fas fa-shield-halved"></i>
-                <h3>Precision Vetting</h3>
-                <p>Every component is verified for performance and compatibility by our technical specialists.</p>
+                <i class="service-icon fas fa-check-circle"></i>
+                <h3>Genuine Quality</h3>
+                <p>Every part is verified for compatibility and performance.</p>
             </div>
             <div class="service-card">
-                <i class="service-icon fas fa-user-gear"></i>
-                <h3>Expert Guidance</h3>
-                <p>Direct access to master technicians for complex part sourcing and technical support.</p>
+                <i class="service-icon fas fa-headset"></i>
+                <h3>Expert Support</h3>
+                <p>Speak directly to specialists who understand your vehicle.</p>
             </div>
         </div>
+    </section>
 
-        <div class="service-steps" data-reveal>
-            <div class="step-card">
-                <div class="step-number">01</div>
-                <h4>Request</h4>
-                <p>Submit details via our secure channels.</p>
+    <!-- Logistics Showcase -->
+    <section class="services-section" style="background: var(--bg-white);">
+        <div class="section-header" data-reveal>
+            <h2 class="section-title" style="font-size: 2rem;">Seamless Fulfillment</h2>
+            <p class="section-subtitle">No shop visits. No queues. We handle the technical sourcing and express
+                logistics.</p>
+        </div>
+
+        <div class="service-steps" data-reveal
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: var(--container-width); margin: 0 auto;">
+            <div style="text-align: center; padding: 20px;">
+                <div
+                    style="font-size: 3rem; font-weight: 800; color: var(--bg-light); margin-bottom: -30px; opacity: 0.5;">
+                    01</div>
+                <h3 style="margin-top: 15px;">Smart Sourcing</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Submit your VIN and part details. Our
+                    technicians source from our elite global network.</p>
             </div>
-            <div class="step-card">
-                <div class="step-number">02</div>
-                <h4>Analyze</h4>
-                <p>Receive a precision quote instantly.</p>
+            <div style="text-align: center; padding: 20px;">
+                <div
+                    style="font-size: 3rem; font-weight: 800; color: var(--bg-light); margin-bottom: -30px; opacity: 0.5;">
+                    02</div>
+                <h3 style="margin-top: 15px;">Precision Vetting</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Every part is verified for compatibility and
+                    performance before it ever leaves our facility.</p>
             </div>
-            <div class="step-card">
-                <div class="step-number">03</div>
-                <h4>Verify</h4>
-                <p>Quality check by certified suppliers.</p>
-            </div>
-            <div class="step-card">
-                <div class="step-number">04</div>
-                <h4>Deploy</h4>
-                <p>Express delivery tracked to door.</p>
+            <div style="text-align: center; padding: 20px;">
+                <div
+                    style="font-size: 3rem; font-weight: 800; color: var(--bg-light); margin-bottom: -30px; opacity: 0.5;">
+                    03</div>
+                <h3 style="margin-top: 15px;">Direct Delivery</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Tracked express shipping sends your parts
+                    directly to your workshop or home, nationwide.</p>
             </div>
         </div>
     </section>
@@ -146,76 +192,77 @@
     <section id="contact" class="dtr-section">
         <div class="container">
             <div class="section-header" data-reveal>
-                <h2 class="section-title">Source Your Part</h2>
-                <p class="section-subtitle">Provide your vehicle specifications for a precision match.</p>
+                <h2 class="section-title" style="font-size: 2rem;">Request a Part</h2>
+                <p class="section-subtitle">Complete the form below and we'll get back to you with a quote.</p>
             </div>
             <form id="orderForm" class="dtr-form" data-reveal>
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
                 <input type="text" name="vehicle_make" placeholder="Vehicle Make" required>
-                <input type="text" name="vehicle_model" placeholder="Vehicle Model" required>
-                <input type="text" name="vehicle_year" placeholder="Vehicle Year" required>
-                <input type="text" name="vin" placeholder="VIN Number (Optional)" class="full-width">
+                <input type="text" name="vehicle_model" placeholder="Model" required>
+                <input type="text" name="vehicle_year" placeholder="Year" required>
+                <input type="text" name="vin" placeholder="VIN (Optional)" class="full-width">
                 <select name="part_category" required class="full-width">
-                    <option value="">Select Part Category</option>
-                    <option value="engine">Engine Components</option>
+                    <option value="">Category</option>
+                    <option value="engine">Engine</option>
                     <option value="brakes">Brakes & Suspension</option>
-                    <option value="electrical">Electrical & Electronics</option>
-                    <option value="body">Aesthetics & Body Kits</option>
+                    <option value="electrical">Electrical</option>
+                    <option value="body">Body</option>
                 </select>
                 <input type="text" name="delivery_address" placeholder="Delivery Address" required class="full-width">
-                <textarea name="message" placeholder="Additional technical details..."></textarea>
-                
+                <textarea name="message" placeholder="Details about your request..."></textarea>
+
                 <div class="full-width" style="margin: 10px 0;">
                     <input type="checkbox" id="terms" required style="width: auto; margin-right: 10px;">
-                    <label for="terms" style="font-size: 0.9rem; opacity: 0.8;">I accept the <a href="tc.html" style="color: var(--accent-red);">Terms and Conditions</a></label>
+                    <label for="terms" style="font-size: 0.85rem; color: var(--text-muted);">Agree to <a href="tc.html"
+                            style="color: var(--text-main);">Terms</a></label>
                 </div>
-                
-                <button type="submit">Submit Request</button>
+
+                <button type="submit">Submit Inquiry</button>
             </form>
         </div>
     </section>
 
+    <!-- Sticky Mobile Bar -->
+    <div class="sticky-actions">
+        <a href="tel:+27835190624"><i class="fas fa-phone"></i>Call</a>
+        <a href="https://wa.me/27835190624"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+        <a href="https://t.me/SparesCapitalBot" target="_blank"><i class="fab fa-telegram"></i>Telegram</a>
+    </div>
+
     <footer>
         <div class="container">
-            <img src="images/SCLogo.png" alt="Spares Capital" style="height: 40px; margin-bottom: 20px; filter: grayscale(1) brightness(2);">
-            <p>&copy; <span id="year"></span> Spares Capital. Precision Performance.</p>
+            <p style="font-size: 0.9rem; font-weight: 500;">&copy; <span id="year"></span> Spares Capital</p>
             <div class="footer-socials">
-                <a href="https://facebook.com/SparesCapital" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://x.com/sparescapital" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://instagram.com/SparesCapital" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <p style="font-size: 0.8rem; opacity: 0.5;">support@sparescapital.com | +27 83 519 0624</p>
+            <p style="font-size: 0.8rem; color: var(--text-muted);">support@sparescapital.com | +27 83 519 0624</p>
         </div>
     </footer>
 
     <script>
-        // Core Functionality
         document.addEventListener("DOMContentLoaded", () => {
             const hamburger = document.querySelector(".hamburger");
             const navLinks = document.querySelector(".nav-links");
             const overlay = document.querySelector(".loading-overlay");
 
-            // Hide Loader
             window.addEventListener("load", () => {
                 overlay.style.opacity = "0";
                 setTimeout(() => overlay.style.display = "none", 500);
             });
 
-            // Mobile Menu
             hamburger.addEventListener("click", () => {
                 navLinks.classList.toggle("active");
-                hamburger.querySelector("i").classList.toggle("fa-bars");
-                hamburger.querySelector("i").classList.toggle("fa-times");
             });
 
-            // Scroll Reveals
             const revealElements = document.querySelectorAll("[data-reveal]");
             const revealOnScroll = () => {
                 revealElements.forEach(el => {
                     const rect = el.getBoundingClientRect();
-                    if (rect.top < window.innerHeight * 0.85) {
+                    if (rect.top < window.innerHeight * 0.9) {
                         el.classList.add("revealed");
                     }
                 });
@@ -223,22 +270,20 @@
             window.addEventListener("scroll", revealOnScroll);
             revealOnScroll();
 
-            // Smooth Scroll
             window.scrollToContact = () => {
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
             };
 
-            // Year
             document.getElementById("year").textContent = new Date().getFullYear();
-
             // Form Submit
             document.getElementById("orderForm").addEventListener("submit", async (e) => {
                 e.preventDefault();
                 const btn = e.target.querySelector('button');
+                const originalText = btn.textContent;
+
                 btn.disabled = true;
-                btn.textContent = "Processing...";
-                
-                // Keep the exact same logic for submission
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+
                 const formData = new FormData(e.target);
                 const data = Object.fromEntries(formData.entries());
 
@@ -249,16 +294,19 @@
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify(data)
                     });
-                    alert("Request submitted successfully. An expert will contact you shortly.");
+
+                    // Success UI
+                    alert("Order logged! You'll receive a confirmation on WhatsApp/Telegram shortly.");
                     e.target.reset();
                 } catch (error) {
-                    alert("Submission failed. Please contact us via WhatsApp.");
+                    alert("Submission failed. Please use the WhatsApp or Telegram buttons below.");
                 } finally {
                     btn.disabled = false;
-                    btn.textContent = "Submit Request";
+                    btn.textContent = originalText;
                 }
             });
         });
     </script>
 </body>
+
 </html>
